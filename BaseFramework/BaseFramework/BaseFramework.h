@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <BaseFramework/FileUtility.h>
 
 //! Project version number for BaseFramework.
 FOUNDATION_EXPORT double BaseFrameworkVersionNumber;

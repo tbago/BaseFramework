@@ -13,15 +13,13 @@
 		D05059EE1E0CC1AD007C7870 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D05059EC1E0CC1AD007C7870 /* Main.storyboard */; };
 		D05059F01E0CC1AD007C7870 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D05059EF1E0CC1AD007C7870 /* Assets.xcassets */; };
 		D05059F31E0CC1AD007C7870 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D05059F11E0CC1AD007C7870 /* LaunchScreen.storyboard */; };
-		D0505A031E0CC1B5007C7870 /* FileUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = D05059FE1E0CC1B5007C7870 /* FileUtility.m */; };
-		D0505A041E0CC1B5007C7870 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D05059FF1E0CC1B5007C7870 /* Info.plist */; };
-		D0505A081E0CC1CE007C7870 /* Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0505A071E0CC1B5007C7870 /* Base.framework */; };
+		D0505A0F1E0CC33C007C7870 /* Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0505A0E1E0CC212007C7870 /* Base.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D0505A061E0CC1B5007C7870 /* PBXContainerItemProxy */ = {
+		D0505A0D1E0CC212007C7870 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D0505A001E0CC1B5007C7870 /* BaseFramework.xcodeproj */;
+			containerPortal = D0505A091E0CC212007C7870 /* BaseFramework.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = D09FF2F31E0B86740010C2E9;
 			remoteInfo = Base;
@@ -39,11 +37,7 @@
 		D05059EF1E0CC1AD007C7870 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D05059F21E0CC1AD007C7870 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D05059F41E0CC1AD007C7870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D05059FC1E0CC1B5007C7870 /* BaseFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseFramework.h; sourceTree = "<group>"; };
-		D05059FD1E0CC1B5007C7870 /* FileUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileUtility.h; sourceTree = "<group>"; };
-		D05059FE1E0CC1B5007C7870 /* FileUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileUtility.m; sourceTree = "<group>"; };
-		D05059FF1E0CC1B5007C7870 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D0505A001E0CC1B5007C7870 /* BaseFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = BaseFramework.xcodeproj; sourceTree = "<group>"; };
+		D0505A091E0CC212007C7870 /* BaseFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BaseFramework.xcodeproj; path = ../BaseFramework/BaseFramework.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0505A081E0CC1CE007C7870 /* Base.framework in Frameworks */,
+				D0505A0F1E0CC33C007C7870 /* Base.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,7 +55,7 @@
 		D05059D71E0CC1AD007C7870 = {
 			isa = PBXGroup;
 			children = (
-				D05059FA1E0CC1B5007C7870 /* BaseFramework */,
+				D0505A091E0CC212007C7870 /* BaseFramework.xcodeproj */,
 				D05059E21E0CC1AD007C7870 /* BaseFrameworkDemo */,
 				D05059E11E0CC1AD007C7870 /* Products */,
 			);
@@ -99,31 +93,10 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D05059FA1E0CC1B5007C7870 /* BaseFramework */ = {
+		D0505A0A1E0CC212007C7870 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D05059FB1E0CC1B5007C7870 /* BaseFramework */,
-				D0505A001E0CC1B5007C7870 /* BaseFramework.xcodeproj */,
-			);
-			name = BaseFramework;
-			path = ../BaseFramework;
-			sourceTree = "<group>";
-		};
-		D05059FB1E0CC1B5007C7870 /* BaseFramework */ = {
-			isa = PBXGroup;
-			children = (
-				D05059FC1E0CC1B5007C7870 /* BaseFramework.h */,
-				D05059FD1E0CC1B5007C7870 /* FileUtility.h */,
-				D05059FE1E0CC1B5007C7870 /* FileUtility.m */,
-				D05059FF1E0CC1B5007C7870 /* Info.plist */,
-			);
-			path = BaseFramework;
-			sourceTree = "<group>";
-		};
-		D0505A011E0CC1B5007C7870 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D0505A071E0CC1B5007C7870 /* Base.framework */,
+				D0505A0E1E0CC212007C7870 /* Base.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -175,8 +148,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = D0505A011E0CC1B5007C7870 /* Products */;
-					ProjectRef = D0505A001E0CC1B5007C7870 /* BaseFramework.xcodeproj */;
+					ProductGroup = D0505A0A1E0CC212007C7870 /* Products */;
+					ProjectRef = D0505A091E0CC212007C7870 /* BaseFramework.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -187,11 +160,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		D0505A071E0CC1B5007C7870 /* Base.framework */ = {
+		D0505A0E1E0CC212007C7870 /* Base.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Base.framework;
-			remoteRef = D0505A061E0CC1B5007C7870 /* PBXContainerItemProxy */;
+			remoteRef = D0505A0D1E0CC212007C7870 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -201,7 +174,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0505A041E0CC1B5007C7870 /* Info.plist in Resources */,
 				D05059F31E0CC1AD007C7870 /* LaunchScreen.storyboard in Resources */,
 				D05059F01E0CC1AD007C7870 /* Assets.xcassets in Resources */,
 				D05059EE1E0CC1AD007C7870 /* Main.storyboard in Resources */,
@@ -215,7 +187,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0505A031E0CC1B5007C7870 /* FileUtility.m in Sources */,
 				D05059EB1E0CC1AD007C7870 /* ViewController.m in Sources */,
 				D05059E81E0CC1AD007C7870 /* AppDelegate.m in Sources */,
 				D05059E51E0CC1AD007C7870 /* main.m in Sources */,
@@ -369,6 +340,7 @@
 				D05059F91E0CC1AD007C7870 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

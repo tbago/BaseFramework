@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <Base/BaseFramework.h>
 
 @interface ViewController ()
 
@@ -17,6 +18,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    NSLog(@"%@", getDocumentDirectory());
+    
+    NSLog(@"%@", getCacheDirectory());
+    
+    NSLog(@"%@", getApplicationSupportDirectory());
+    
+    NSLog(@"%@", getTempDirectory());
 }
 
 - (void)didReceiveMemoryWarning {
