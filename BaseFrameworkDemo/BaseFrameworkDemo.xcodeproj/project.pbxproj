@@ -13,7 +13,7 @@
 		D09FF3151E0B86E00010C2E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09FF3131E0B86E00010C2E9 /* Main.storyboard */; };
 		D09FF3171E0B86E00010C2E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D09FF3161E0B86E00010C2E9 /* Assets.xcassets */; };
 		D09FF31A1E0B86E00010C2E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09FF3181E0B86E00010C2E9 /* LaunchScreen.storyboard */; };
-		D09FF3271E0B87210010C2E9 /* BaseFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09FF3261E0B870E0010C2E9 /* BaseFramework.framework */; };
+		D09FF3271E0B87210010C2E9 /* Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09FF3261E0B870E0010C2E9 /* Base.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D09FF3271E0B87210010C2E9 /* BaseFramework.framework in Frameworks */,
+				D09FF3271E0B87210010C2E9 /* Base.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +96,7 @@
 		D09FF3221E0B870E0010C2E9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D09FF3261E0B870E0010C2E9 /* BaseFramework.framework */,
+				D09FF3261E0B870E0010C2E9 /* Base.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,10 +161,10 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		D09FF3261E0B870E0010C2E9 /* BaseFramework.framework */ = {
+		D09FF3261E0B870E0010C2E9 /* Base.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = BaseFramework.framework;
+			path = Base.framework;
 			remoteRef = D09FF3251E0B870E0010C2E9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -311,6 +311,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BaseFrameworkDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tbago.BaseFrameworkDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -322,6 +323,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BaseFrameworkDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tbago.BaseFrameworkDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
