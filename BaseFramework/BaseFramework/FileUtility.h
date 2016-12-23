@@ -44,3 +44,54 @@ NSString * getCacheDirectory();
  *  @return app application support directory
  */
 NSString * getApplicationSupportDirectory();
+
+#pragma mark - File Operation
+/**
+ *  Create file directory if not exits
+ *
+ *  @param directoryPath the directory want to create
+ *  @param create directory error info (output value)
+ *  @return create directory result
+ */
+BOOL createDirectoryIfNotExists(NSString *directoryPath, NSError *error);
+
+/**
+ *  Check weather file exits at path
+ *
+ *  @param filePath file path to check
+ *
+ *  @return weather file exits at path
+ */
+BOOL fileExistsAtPath(NSString *filePath);
+
+/**
+ *  enum directory files with ext support
+ *
+ *  @param directoryPath directory want to enum
+ *  @param fileExtArray  file ext filter. If you want to enum all files, you can input the param value nil or empty array.
+ *  @param resultArray   the result array owned by caller. Need init by owners, the function will add items to this array.
+ *
+ *  @return enum file result
+ */
+BOOL enumFileInDirectory(NSString* directoryPath, NSArray *fileExtArray, NSMutableArray *resultArray);
+
+/**
+ *  Delete file at path
+ *
+ *  @param filePath file want to delete
+ *  @param error output error info
+ *
+ *  @return delete file result
+ */
+BOOL deleteFileAtPath(NSString *filePath, NSError *error);
+
+/**
+ *  Move source file to destination path
+ *  If the destination file is exits, this function will remove the destination file
+ *
+ *  @param sourcePath input source path
+ *  @param destPath   input destination path
+ *  @param error ouput error info
+ *  @return move file result
+ */
+BOOL moveFileToPath(NSString *sourcePath, NSString *destPath, NSError *error);

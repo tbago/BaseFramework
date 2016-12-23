@@ -25,6 +25,9 @@
     
     NSLog(@"%@", getApplicationSupportDirectory());
     
+    NSError *error = nil;
+    BOOL ret = createDirectoryIfNotExists(getApplicationSupportDirectory(), error);
+    
     NSLog(@"%@", getTempDirectory());
 }
 
