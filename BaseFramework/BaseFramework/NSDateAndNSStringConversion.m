@@ -32,8 +32,8 @@ NSString* convertNSDateToShortNSString(NSDate *date) {
 NSDate *convertNSStringToNSDate(NSString *stringDate, NSString *format) {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:format];
-//    [dateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en"]];
-    
-    NSDate *destDate= [dateFormatter dateFromString:stringDate];
+    [dateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en"]];
+
+    NSDate *destDate = [dateFormatter dateFromString:stringDate];
     return destDate;
 }

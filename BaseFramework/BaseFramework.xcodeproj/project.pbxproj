@@ -17,6 +17,8 @@
 		D08A1BF81E0E1B11001205AA /* iTunesUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = D08A1BF61E0E1B11001205AA /* iTunesUtility.m */; };
 		D08A1BFC1E0E24D6001205AA /* NSDateAndNSStringConversion.h in Headers */ = {isa = PBXBuildFile; fileRef = D08A1BFA1E0E24D6001205AA /* NSDateAndNSStringConversion.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D08A1BFD1E0E24D6001205AA /* NSDateAndNSStringConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = D08A1BFB1E0E24D6001205AA /* NSDateAndNSStringConversion.m */; };
+		D08A1C011E0E4BB8001205AA /* DateUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = D08A1BFF1E0E4BB8001205AA /* DateUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D08A1C021E0E4BB8001205AA /* DateUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = D08A1C001E0E4BB8001205AA /* DateUtility.m */; };
 		D09CB1CC1E0CB60600E7BA8E /* FileUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = D09CB1CA1E0CB60600E7BA8E /* FileUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D09CB1CD1E0CB60600E7BA8E /* FileUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = D09CB1CB1E0CB60600E7BA8E /* FileUtility.m */; };
 		D09FF2F81E0B86740010C2E9 /* BaseFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = D09FF2F61E0B86740010C2E9 /* BaseFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -33,6 +35,8 @@
 		D08A1BF61E0E1B11001205AA /* iTunesUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iTunesUtility.m; sourceTree = "<group>"; };
 		D08A1BFA1E0E24D6001205AA /* NSDateAndNSStringConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDateAndNSStringConversion.h; sourceTree = "<group>"; };
 		D08A1BFB1E0E24D6001205AA /* NSDateAndNSStringConversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDateAndNSStringConversion.m; sourceTree = "<group>"; };
+		D08A1BFF1E0E4BB8001205AA /* DateUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateUtility.h; sourceTree = "<group>"; };
+		D08A1C001E0E4BB8001205AA /* DateUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateUtility.m; sourceTree = "<group>"; };
 		D09CB1CA1E0CB60600E7BA8E /* FileUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileUtility.h; sourceTree = "<group>"; };
 		D09CB1CB1E0CB60600E7BA8E /* FileUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileUtility.m; sourceTree = "<group>"; };
 		D09FF2F31E0B86740010C2E9 /* BaseFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BaseFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +87,8 @@
 				D08A1BF61E0E1B11001205AA /* iTunesUtility.m */,
 				D08A1BFA1E0E24D6001205AA /* NSDateAndNSStringConversion.h */,
 				D08A1BFB1E0E24D6001205AA /* NSDateAndNSStringConversion.m */,
+				D08A1BFF1E0E4BB8001205AA /* DateUtility.h */,
+				D08A1C001E0E4BB8001205AA /* DateUtility.m */,
 				D09FF2F71E0B86740010C2E9 /* Info.plist */,
 			);
 			path = BaseFramework;
@@ -101,6 +107,7 @@
 				D08A1BF31E0E122F001205AA /* DiscUtility.h in Headers */,
 				D08A1BF71E0E1B11001205AA /* iTunesUtility.h in Headers */,
 				D08A1BE31E0DFA98001205AA /* LanguageUtlity.h in Headers */,
+				D08A1C011E0E4BB8001205AA /* DateUtility.h in Headers */,
 				D08A1BFC1E0E24D6001205AA /* NSDateAndNSStringConversion.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,6 +183,7 @@
 				D08A1BE41E0DFA98001205AA /* LanguageUtlity.m in Sources */,
 				D08A1BF81E0E1B11001205AA /* iTunesUtility.m in Sources */,
 				D08A1BE81E0DFB08001205AA /* DeviceUtility.m in Sources */,
+				D08A1C021E0E4BB8001205AA /* DateUtility.m in Sources */,
 				D09CB1CD1E0CB60600E7BA8E /* FileUtility.m in Sources */,
 				D08A1BFD1E0E24D6001205AA /* NSDateAndNSStringConversion.m in Sources */,
 				D08A1BF41E0E122F001205AA /* DiscUtility.m in Sources */,

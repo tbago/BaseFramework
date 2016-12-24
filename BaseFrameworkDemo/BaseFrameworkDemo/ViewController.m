@@ -35,7 +35,7 @@
     
     NSLog(@"wifi value:%@", getCurrentWifiSSID());
     
-    NSLog(@"current time:%@", convertNSStringToNSDate(convertNSDateToStandString([NSDate date]), @"yyyy-MM-dd HH:mm:ss"));
+    NSLog(@"current time:%@", convertNSDateToStandString([NSDate date]));
 }
 
 - (void)didReceiveMemoryWarning {
