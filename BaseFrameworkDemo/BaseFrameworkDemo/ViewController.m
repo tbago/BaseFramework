@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import <Base/BaseFramework.h>
+#import <BaseFramework/BaseFramework.h>
 
 @interface ViewController ()
 
@@ -25,10 +25,11 @@
     
     NSLog(@"%@", getApplicationSupportDirectory());
     
-    NSError *error = nil;
-    createDirectoryIfNotExists(getApplicationSupportDirectory(), error);
-    
-    NSLog(@"%@", getTempDirectory());
+//    NSError *error = nil;
+//    createDirectoryIfNotExists(getApplicationSupportDirectory(), error);
+  
+    NSString *ipAddress = getDeviceIPAddress();
+    NSLog(@"%@", ipAddress);
 }
 
 - (void)didReceiveMemoryWarning {

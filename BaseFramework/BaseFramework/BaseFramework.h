@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <BaseFramework/FileUtility.h>
+#import <BaseFramework/DeviceUtility.h>
+#import <BaseFramework/LanguageUtlity.h>
 
 //! Project version number for BaseFramework.
 FOUNDATION_EXPORT double BaseFrameworkVersionNumber;

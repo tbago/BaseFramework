@@ -30,6 +30,17 @@ BOOL isIPadDevice();
 /**
  *  Check weather the current device is iPad Pro 12.9-inch
  *  iPad Pro 12.9 inch has different aspect ratio between other iPad device.
+ *
  *  @return weather is iPad Pro device
  */
 BOOL isIPadPro12Point9InchDevice();
+
+/**
+ *  Get current device ip address
+ *  For simulator device this will return the current computer ip address
+ *  For real device when the device is connect to the wifi, this address will be the wifi address.
+    When there is not wifi connection, will return empty string.
+ *
+ *  @return current device ip address
+ */
+NSString *getDeviceIPAddress();

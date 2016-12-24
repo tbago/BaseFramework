@@ -13,7 +13,8 @@
 		D05059EE1E0CC1AD007C7870 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D05059EC1E0CC1AD007C7870 /* Main.storyboard */; };
 		D05059F01E0CC1AD007C7870 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D05059EF1E0CC1AD007C7870 /* Assets.xcassets */; };
 		D05059F31E0CC1AD007C7870 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D05059F11E0CC1AD007C7870 /* LaunchScreen.storyboard */; };
-		D0505A0F1E0CC33C007C7870 /* Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0505A0E1E0CC212007C7870 /* Base.framework */; };
+		D08A1BEA1E0E0A3D001205AA /* Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0505A0E1E0CC212007C7870 /* Base.framework */; };
+		D08A1BED1E0E0DFA001205AA /* Base.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D0505A0E1E0CC212007C7870 /* Base.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +25,28 @@
 			remoteGlobalIDString = D09FF2F31E0B86740010C2E9;
 			remoteInfo = Base;
 		};
+		D08A1BEE1E0E0DFA001205AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0505A091E0CC212007C7870 /* BaseFramework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D09FF2F21E0B86740010C2E9;
+			remoteInfo = BaseFramework;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D08A1BF01E0E0DFA001205AA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D08A1BED1E0E0DFA001205AA /* Base.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D05059E01E0CC1AD007C7870 /* BaseFrameworkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseFrameworkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,7 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0505A0F1E0CC33C007C7870 /* Base.framework in Frameworks */,
+				D08A1BEA1E0E0A3D001205AA /* Base.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +102,7 @@
 				D05059EF1E0CC1AD007C7870 /* Assets.xcassets */,
 				D05059F11E0CC1AD007C7870 /* LaunchScreen.storyboard */,
 				D05059F41E0CC1AD007C7870 /* Info.plist */,
+				D08A1BEB1E0E0D40001205AA /* Frameworks */,
 				D05059E31E0CC1AD007C7870 /* Supporting Files */,
 			);
 			path = BaseFrameworkDemo;
@@ -101,6 +124,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		D08A1BEB1E0E0D40001205AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -111,10 +141,12 @@
 				D05059DC1E0CC1AD007C7870 /* Sources */,
 				D05059DD1E0CC1AD007C7870 /* Frameworks */,
 				D05059DE1E0CC1AD007C7870 /* Resources */,
+				D08A1BF01E0E0DFA001205AA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D08A1BEF1E0E0DFA001205AA /* PBXTargetDependency */,
 			);
 			name = BaseFrameworkDemo;
 			productName = BaseFrameworkDemo;
@@ -132,6 +164,7 @@
 				TargetAttributes = {
 					D05059DF1E0CC1AD007C7870 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 37S3J3DCJ3;
 					};
 				};
 			};
@@ -194,6 +227,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D08A1BEF1E0E0DFA001205AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BaseFramework;
+			targetProxy = D08A1BEE1E0E0DFA001205AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D05059EC1E0CC1AD007C7870 /* Main.storyboard */ = {
@@ -303,10 +344,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BaseFrameworkDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tbago.BaseFrameworkDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -314,10 +359,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BaseFrameworkDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tbago.BaseFrameworkDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
