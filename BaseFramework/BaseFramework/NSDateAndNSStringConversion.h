@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+#pragma mark - NSDate to NSString
 /**
  *  Convert NSDate to special format NSString
  *
@@ -35,3 +36,7 @@ NSString* convertNSDateToStandString(NSDate *date);
  *  @return NSString date value
  */
 NSString* convertNSDateToShortNSString(NSDate *date);
+
+#pragma mark - NSString to NSDate
+
+NSDate *convertNSStringToNSDate(NSString *stringDate, NSString *format);
