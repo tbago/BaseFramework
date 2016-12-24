@@ -10,6 +10,7 @@
 #import <BaseFramework/FileUtility.h>
 #import <BaseFramework/DeviceUtility.h>
 #import <BaseFramework/LanguageUtlity.h>
+#import <BaseFramework/DiscUtility.h>
 
 //! Project version number for BaseFramework.
 FOUNDATION_EXPORT double BaseFrameworkVersionNumber;

@@ -30,6 +30,8 @@
   
     NSString *ipAddress = getDeviceIPAddress();
     NSLog(@"%@", ipAddress);
+    
+    NSLog(@"disc space:%zd bytes, %@", getDiskFreeSize(), getReadableDiscFreeSpace());
 }
 
 - (void)didReceiveMemoryWarning {
