@@ -34,6 +34,8 @@
     NSLog(@"disc space:%zd bytes, %@", getDiskFreeSize(), getReadableDiscFreeSpace());
     
     NSLog(@"wifi value:%@", getCurrentWifiSSID());
+    
+    NSLog(@"current time:%@", convertNSDateToStandString([NSDate date]));
 }
 
 - (void)didReceiveMemoryWarning {
