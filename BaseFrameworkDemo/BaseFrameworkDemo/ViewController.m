@@ -41,4 +41,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)testButtonClick:(UIButton *)sender {
+    openAppStoreByiTunesId(@"1095972352");
+}
+
 @end

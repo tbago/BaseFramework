@@ -13,6 +13,8 @@
 		D08A1BE81E0DFB08001205AA /* DeviceUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = D08A1BE61E0DFB08001205AA /* DeviceUtility.m */; };
 		D08A1BF31E0E122F001205AA /* DiscUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = D08A1BF11E0E122F001205AA /* DiscUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D08A1BF41E0E122F001205AA /* DiscUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = D08A1BF21E0E122F001205AA /* DiscUtility.m */; };
+		D08A1BF71E0E1B11001205AA /* iTunesUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = D08A1BF51E0E1B11001205AA /* iTunesUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D08A1BF81E0E1B11001205AA /* iTunesUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = D08A1BF61E0E1B11001205AA /* iTunesUtility.m */; };
 		D09CB1CC1E0CB60600E7BA8E /* FileUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = D09CB1CA1E0CB60600E7BA8E /* FileUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D09CB1CD1E0CB60600E7BA8E /* FileUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = D09CB1CB1E0CB60600E7BA8E /* FileUtility.m */; };
 		D09FF2F81E0B86740010C2E9 /* BaseFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = D09FF2F61E0B86740010C2E9 /* BaseFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -25,6 +27,8 @@
 		D08A1BE61E0DFB08001205AA /* DeviceUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceUtility.m; sourceTree = "<group>"; };
 		D08A1BF11E0E122F001205AA /* DiscUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscUtility.h; sourceTree = "<group>"; };
 		D08A1BF21E0E122F001205AA /* DiscUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscUtility.m; sourceTree = "<group>"; };
+		D08A1BF51E0E1B11001205AA /* iTunesUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTunesUtility.h; sourceTree = "<group>"; };
+		D08A1BF61E0E1B11001205AA /* iTunesUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iTunesUtility.m; sourceTree = "<group>"; };
 		D09CB1CA1E0CB60600E7BA8E /* FileUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileUtility.h; sourceTree = "<group>"; };
 		D09CB1CB1E0CB60600E7BA8E /* FileUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileUtility.m; sourceTree = "<group>"; };
 		D09FF2F31E0B86740010C2E9 /* BaseFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BaseFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +75,8 @@
 				D08A1BE61E0DFB08001205AA /* DeviceUtility.m */,
 				D08A1BF11E0E122F001205AA /* DiscUtility.h */,
 				D08A1BF21E0E122F001205AA /* DiscUtility.m */,
+				D08A1BF51E0E1B11001205AA /* iTunesUtility.h */,
+				D08A1BF61E0E1B11001205AA /* iTunesUtility.m */,
 				D09FF2F71E0B86740010C2E9 /* Info.plist */,
 			);
 			path = BaseFramework;
@@ -87,6 +93,7 @@
 				D09CB1CC1E0CB60600E7BA8E /* FileUtility.h in Headers */,
 				D08A1BE71E0DFB08001205AA /* DeviceUtility.h in Headers */,
 				D08A1BF31E0E122F001205AA /* DiscUtility.h in Headers */,
+				D08A1BF71E0E1B11001205AA /* iTunesUtility.h in Headers */,
 				D08A1BE31E0DFA98001205AA /* LanguageUtlity.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D08A1BE41E0DFA98001205AA /* LanguageUtlity.m in Sources */,
+				D08A1BF81E0E1B11001205AA /* iTunesUtility.m in Sources */,
 				D08A1BE81E0DFB08001205AA /* DeviceUtility.m in Sources */,
 				D09CB1CD1E0CB60600E7BA8E /* FileUtility.m in Sources */,
 				D08A1BF41E0E122F001205AA /* DiscUtility.m in Sources */,
