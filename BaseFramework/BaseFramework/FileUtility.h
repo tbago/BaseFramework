@@ -50,7 +50,7 @@ NSString * getApplicationSupportDirectory();
  *  Create file directory if not exits
  *
  *  @param directoryPath the directory want to create
- *  @param create directory error info (output value)
+ *  @param error create directory error info (output value)
  *  @return create directory result
  */
 BOOL createDirectoryIfNotExists(NSString *directoryPath, NSError *error);
@@ -95,3 +95,12 @@ BOOL deleteFileAtPath(NSString *filePath, NSError *error);
  *  @return move file result
  */
 BOOL moveFileToPath(NSString *sourcePath, NSString *destPath, NSError *error);
+
+/**
+ *  Calc file MD5 value
+ *
+ *  @param filePath input file path
+ *
+ *  @return MD5 value for file
+ */
+NSString *calcFileMD5HashValueByFile(NSString *filePath);

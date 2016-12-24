@@ -8,6 +8,8 @@
 
 #import "FileUtility.h"
 
+#import <CommonCrypto/CommonDigest.h>
+
 #pragma mark - App dicectory operation
 
 NSString * getDocumentDirectory() {
@@ -95,4 +97,39 @@ BOOL moveFileToPath(NSString *sourcePath, NSString *destPath, NSError *error)
                                                        error:&error];
 
     return result;
+}
+
+NSString *calcFileMD5HashValueByFile(NSString *filePath) {
+    static NSInteger FileHashDefaultChunkSizeForReadingData = 1024*1024;    ///< 1MB
+    
+    NSFileHandle          *readFileHandle;
+    readFileHandle = [NSFileHandle fileHandleForReadingAtPath:filePath];
+    
+    // Initialize the hash object
+    CC_MD5_CTX hashObject;
+    CC_MD5_Init(&hashObject);
+    
+    while (true) {
+        NSData *bufferData = [readFileHandle readDataOfLength:FileHashDefaultChunkSizeForReadingData];
+        
+        CC_MD5_Update(&hashObject, bufferData.bytes, (CC_LONG)bufferData.length);
+        
+        if (bufferData.length < FileHashDefaultChunkSizeForReadingData) {
+            break;
+        }
+    }
+    
+    // Compute the hash digest
+    unsigned char digest[CC_MD5_DIGEST_LENGTH];
+    CC_MD5_Final(digest, &hashObject);
+    
+    // Compute the string result
+    char hash[2 * sizeof(digest) + 1];
+    for (size_t i = 0; i < sizeof(digest); ++i) {
+        snprintf(hash + (2 * i), 3, "%02x", (int)(digest[i]));
+    }
+    
+    [readFileHandle closeFile];
+    return [[NSString alloc] initWithUTF8String:hash];
+    
 }
