@@ -44,3 +44,11 @@ BOOL isIPadPro12Point9InchDevice();
  *  @return current device ip address
  */
 NSString *getDeviceIPAddress();
+
+/**
+ *  Get current wifi connect SSID
+ *  This function is not work on simulator, in simluator function will return nil.
+ *
+ *  @return current wifi SSID
+ */
+NSString *getCurrentWifiSSID();

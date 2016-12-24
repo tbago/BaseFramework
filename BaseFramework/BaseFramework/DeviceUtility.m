@@ -11,6 +11,7 @@
 #import <sys/utsname.h>
 #include <arpa/inet.h>
 #include <ifaddrs.h>
+#import <SystemConfiguration/CaptiveNetwork.h>      ///< wifi SSID
 
 NSString *getDeviceTypeName() {
     struct utsname systemInfo;
@@ -121,4 +122,16 @@ NSString *getDeviceIPAddress() {
     // Free memory
     freeifaddrs(interfaces);
     return address;
+}
+
+NSString * getCurrentWifiSSID() {
+    NSString *ssid = nil;
+    NSArray *ifs = (__bridge_transfer id)CNCopySupportedInterfaces();
+    for (NSString *ifnam in ifs) {
+        NSDictionary *info = (__bridge_transfer id)CNCopyCurrentNetworkInfo((__bridge CFStringRef)ifnam);
+        if (info[@"SSID"]) {
+            ssid = info[@"SSID"];
+        }
+    }
+    return ssid;
 }

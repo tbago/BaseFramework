@@ -32,6 +32,8 @@
     NSLog(@"%@", ipAddress);
     
     NSLog(@"disc space:%zd bytes, %@", getDiskFreeSize(), getReadableDiscFreeSpace());
+    
+    NSLog(@"wifi value:%@", getCurrentWifiSSID());
 }
 
 - (void)didReceiveMemoryWarning {
