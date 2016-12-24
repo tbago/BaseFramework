@@ -15,3 +15,12 @@
  *  @param iTunesId iTunesId you want to open
  */
 void openAppStoreByiTunesId(NSString * iTunesId);
+
+/**
+ *  Get AppStore app version
+ *
+ *  @param iTunesId the iTunes app id
+ *  @param ^block    return value in block
+ */
+void getiTunesAppVersionByiTunesId(NSString *iTunesId,
+                                   void(^block)(NSError *error, NSString *versionString));

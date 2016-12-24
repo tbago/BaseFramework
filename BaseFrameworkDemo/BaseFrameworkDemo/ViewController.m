@@ -42,7 +42,15 @@
 }
 
 - (IBAction)testButtonClick:(UIButton *)sender {
-    openAppStoreByiTunesId(@"1095972352");
+//    openAppStoreByiTunesId(@"1095972352");
+    getiTunesAppVersionByiTunesId(@"1095972352", ^(NSError *error, NSString *versionString) {
+        if (error == nil) {
+            NSLog(@"app version:%@", versionString);
+        }
+        else {
+            NSLog(@"get version failed with error:%@", error);
+        }
+    });
 }
 
 @end
