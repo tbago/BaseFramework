@@ -20,6 +20,7 @@
     
     TRACK_BEGIN
     
+    TRACK_END
     return;
     
     // Do any additional setup after loading the view, typically from a nib.
