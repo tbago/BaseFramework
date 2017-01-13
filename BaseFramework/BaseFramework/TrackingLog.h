@@ -24,19 +24,24 @@
 - (void)logOneInfoWithFormat:(NSString *)format, ... ;
 @end
 
+#ifdef ENABLE_TRACK_LOG
+
 #ifndef TRACK_BEGIN
 #define TRACK_BEGIN [[TrackingLog sharedInstance]                                           \
-                    logOneInfoWithFormat:@"track begin file:%s function:%s line:%d",        \
-                    __FILE__,                                                               \
+                    logOneInfoWithFormat:@"track begin file:%@ function:%s line:%d",        \
+                    [[NSString stringWithFormat:@"%s", __FILE__] lastPathComponent],        \
                     __FUNCTION__,                                                           \
                     __LINE__];                                                              
 #endif
 
 #ifndef TRACK_END
 #define TRACK_END [[TrackingLog sharedInstance]                                            \
-                    logOneInfoWithFormat:@"track end file:%s function:%s line:%d",         \
-                    __FILE__,                                                              \
+                    logOneInfoWithFormat:@"track end file:%@ function:%s line:%d",         \
+                    [[NSString stringWithFormat:@"%s", __FILE__] lastPathComponent],       \
                     __FUNCTION__,                                                          \
                     __LINE__];
 #endif
-
+#else
+    #define TRACK_BEGIN
+    #define TRACK_END
+#endif

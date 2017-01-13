@@ -8,6 +8,7 @@
 
 #import "TrackingLog.h"
 #import "FileUtility.h"
+#import "NSDateAndNSStringConversion.h"
 
 @interface TrackingLog()
 
@@ -83,6 +84,8 @@
         
         NSLog(@"%@", message);
         
+        NSString *currentDateString = convertNSDateToFormatNSString([NSDate date], @"yyyy-MM-dd HH:mm:ss:SSS");
+        message = [NSString stringWithFormat:@"%@ %@", currentDateString, message];
         message = [message stringByAppendingString:@"\n"];
         [self logStringToFile:message];
         
