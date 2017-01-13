@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D0057FC21E28695D00241ABE /* TrackingLog.h in Headers */ = {isa = PBXBuildFile; fileRef = D0057FC01E28695D00241ABE /* TrackingLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0057FC31E28695D00241ABE /* TrackingLog.m in Sources */ = {isa = PBXBuildFile; fileRef = D0057FC11E28695D00241ABE /* TrackingLog.m */; };
 		D08A1BE31E0DFA98001205AA /* LanguageUtlity.h in Headers */ = {isa = PBXBuildFile; fileRef = D08A1BE11E0DFA98001205AA /* LanguageUtlity.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D08A1BE41E0DFA98001205AA /* LanguageUtlity.m in Sources */ = {isa = PBXBuildFile; fileRef = D08A1BE21E0DFA98001205AA /* LanguageUtlity.m */; };
 		D08A1BE71E0DFB08001205AA /* DeviceUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = D08A1BE51E0DFB08001205AA /* DeviceUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D0057FC01E28695D00241ABE /* TrackingLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackingLog.h; sourceTree = "<group>"; };
+		D0057FC11E28695D00241ABE /* TrackingLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackingLog.m; sourceTree = "<group>"; };
 		D08A1BE11E0DFA98001205AA /* LanguageUtlity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanguageUtlity.h; sourceTree = "<group>"; };
 		D08A1BE21E0DFA98001205AA /* LanguageUtlity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguageUtlity.m; sourceTree = "<group>"; };
 		D08A1BE51E0DFB08001205AA /* DeviceUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceUtility.h; sourceTree = "<group>"; };
@@ -89,6 +93,8 @@
 				D08A1BFB1E0E24D6001205AA /* NSDateAndNSStringConversion.m */,
 				D08A1BFF1E0E4BB8001205AA /* DateUtility.h */,
 				D08A1C001E0E4BB8001205AA /* DateUtility.m */,
+				D0057FC01E28695D00241ABE /* TrackingLog.h */,
+				D0057FC11E28695D00241ABE /* TrackingLog.m */,
 				D09FF2F71E0B86740010C2E9 /* Info.plist */,
 			);
 			path = BaseFramework;
@@ -109,6 +115,7 @@
 				D08A1BE31E0DFA98001205AA /* LanguageUtlity.h in Headers */,
 				D08A1C011E0E4BB8001205AA /* DateUtility.h in Headers */,
 				D08A1BFC1E0E24D6001205AA /* NSDateAndNSStringConversion.h in Headers */,
+				D0057FC21E28695D00241ABE /* TrackingLog.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +192,7 @@
 				D08A1BE81E0DFB08001205AA /* DeviceUtility.m in Sources */,
 				D08A1C021E0E4BB8001205AA /* DateUtility.m in Sources */,
 				D09CB1CD1E0CB60600E7BA8E /* FileUtility.m in Sources */,
+				D0057FC31E28695D00241ABE /* TrackingLog.m in Sources */,
 				D08A1BFD1E0E24D6001205AA /* NSDateAndNSStringConversion.m in Sources */,
 				D08A1BF41E0E122F001205AA /* DiscUtility.m in Sources */,
 			);

@@ -56,6 +56,12 @@ NSString * getApplicationSupportDirectory();
 BOOL createDirectoryIfNotExists(NSString *directoryPath, NSError *error);
 
 /**
+ *  Create file if not exits
+ *
+ */
+BOOL createFileIfNotExits(NSString *filePath, NSString *error);
+
+/**
  *  Check weather file exits at path
  *
  *  @param filePath file path to check

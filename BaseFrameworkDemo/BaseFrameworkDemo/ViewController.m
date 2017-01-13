@@ -17,6 +17,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    TRACK_BEGIN
+    
+    return;
+    
     // Do any additional setup after loading the view, typically from a nib.
     
     NSLog(@"%@", getDocumentDirectory());

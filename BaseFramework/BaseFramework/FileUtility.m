@@ -49,6 +49,13 @@ BOOL createDirectoryIfNotExists(NSString *directoryPath, NSError *error) {
     return result;
 }
 
+BOOL createFileIfNotExits(NSString *filePath, NSString *error) {
+    if (!fileExistsAtPath(filePath)) {
+        [[NSFileManager defaultManager] createFileAtPath:filePath contents:nil attributes:nil];
+    }
+    return YES;
+}
+
 BOOL fileExistsAtPath(NSString *filePath) {
     NSFileManager *fileManager = [NSFileManager defaultManager];
     BOOL isDirectory = NO;

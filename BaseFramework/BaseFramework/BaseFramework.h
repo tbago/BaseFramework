@@ -14,6 +14,7 @@
 #import <BaseFramework/iTunesUtility.h>
 #import <BaseFramework/NSDateAndNSStringConversion.h>
 #import <BaseFramework/DateUtility.h>
+#import <BaseFramework/TrackingLog.h>
 
 //! Project version number for BaseFramework.
 FOUNDATION_EXPORT double BaseFrameworkVersionNumber;
